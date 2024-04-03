@@ -23,6 +23,8 @@ public class Aba {
     int Producto;
     int cantidad;
     float total;
+    int ventaProducto;
+    String nombre;
     
     
     
@@ -31,7 +33,7 @@ public class Aba {
 
     }
 
-    public Aba(String marca,float venta,int Producto,int cantidad,float total,int idPersonal, float precioUnidad, int IdProveedor,String estado, float precio, int idCategoria, Float litro, Float peso, int unidad, String Categoria, String Proveedor, int Id) {
+    public Aba(String marca,int ventaProducto,String nombre,float venta,int Producto,int cantidad,float total,int idPersonal, float precioUnidad, int IdProveedor,String estado, float precio, int idCategoria, Float litro, Float peso, int unidad, String Categoria, String Proveedor, int Id) {
         this.marca = marca;
         this.IdProveedor = IdProveedor;
         this.precio = precio;
@@ -49,6 +51,8 @@ public class Aba {
         this.Producto = Producto;
         this.cantidad = cantidad;
         this.total = total;
+        this.ventaProducto = ventaProducto;
+        this.nombre = nombre;
         
     }
     
@@ -63,6 +67,14 @@ public class Aba {
 
     public void setProveedor(String Proveedor) {
         this.Proveedor = Proveedor;
+    }
+    
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
     
     public String getEstado() {
@@ -88,6 +100,14 @@ public class Aba {
 
     public void setMarca(String marca) {
         this.marca = marca;
+    }
+    
+    public int getVentaProducto() {
+        return ventaProducto;
+    }
+
+    public void setVentaProducto(int ventaProducto) {
+        this.ventaProducto = ventaProducto;
     }
     
     
@@ -217,6 +237,8 @@ public class Aba {
                 ", Producto=" + Producto +
                 ", cantidad=" + cantidad +
                 ", total=" + total +
+                ", total=" + ventaProducto +
+                ", total=" + nombre +
                 '}';
     }
     

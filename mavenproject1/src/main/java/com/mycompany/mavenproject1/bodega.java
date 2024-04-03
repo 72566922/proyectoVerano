@@ -5,7 +5,7 @@
 package com.mycompany.mavenproject1;
 
 import java.awt.BorderLayout;
-import java.awt.Dimension;
+
 
 /**
  *
